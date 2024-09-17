@@ -1,0 +1,10 @@
+{
+  "output": "generated/base",
+  "chain": "base",
+  "datasources": [
+    {
+      "startBlock": 0,
+      "module": ["erc20", "erc721", "erc1155"]
+    }
+  ]
+}

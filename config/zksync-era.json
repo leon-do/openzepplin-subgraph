@@ -1,0 +1,10 @@
+{
+  "output": "generated/zksync-era",
+  "chain": "zksync-era",
+  "datasources": [
+    {
+      "startBlock": 0,
+      "module": ["erc20", "erc721", "erc1155"]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "output": "generated/aurora",
+  "chain": "aurora",
+  "datasources": [
+    {
+      "startBlock": 0,
+      "module": ["erc20", "erc721", "erc1155"]
+    }
+  ]
+}

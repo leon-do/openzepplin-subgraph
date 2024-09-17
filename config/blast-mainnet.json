@@ -1,0 +1,10 @@
+{
+  "output": "generated/blast-mainnet",
+  "chain": "blast-mainnet",
+  "datasources": [
+    {
+      "startBlock": 0,
+      "module": ["erc20", "erc721", "erc1155"]
+    }
+  ]
+}

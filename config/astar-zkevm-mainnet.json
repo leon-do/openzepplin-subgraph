@@ -1,0 +1,10 @@
+{
+  "output": "generated/astar-zkevm-mainnet",
+  "chain": "astar-zkevm-mainnet",
+  "datasources": [
+    {
+      "startBlock": 0,
+      "module": ["erc20", "erc721", "erc1155"]
+    }
+  ]
+}
