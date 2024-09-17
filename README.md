@@ -2,6 +2,33 @@
 
 Deploys [Open Zepplin Subgraphs](https://docs.openzeppelin.com/subgraphs/0.1.x/) to Subgraph Studio
 
+## The Graph Deployment
+
+[Create a Subgraph](https://thegraph.com/studio/)
+
+Create a file in `config/` named after the network you want to deploy to, e.g. `config/celo.json`
+
+```json
+{
+  "output": "generated/celo",
+  "chain": "celo",
+  "datasources": [
+    {
+      "startBlock": 0,
+      "module": ["erc20", "erc721", "erc1155"]
+    }
+  ]
+}
+```
+
+In `package.json` add a script for the network you want to deploy to, e.g.
+
+```json
+{
+  "celo": "graph-compiler --config config/celo.json --include node_modules/@openzeppelin/subgraphs/src/datasources --export-schema --export-subgraph && graph codegen generated/celosubgraph.yaml && graph build generated/celosubgraph.yaml && graph deploy --studio celo-tokens generated/celosubgraph.yaml",
+}
+```
+
 ## Networks
 
 | Network    | Link |
